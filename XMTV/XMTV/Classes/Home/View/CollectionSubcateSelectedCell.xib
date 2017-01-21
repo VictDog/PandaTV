@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionSubcateSelectedCell" customModule="XMTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="99" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="99" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-Bf-FVw">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="英雄联盟">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="MVd-Bf-FVw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AMr-d8-4NV"/>
+                <constraint firstItem="MVd-Bf-FVw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CHo-GG-2wS"/>
+                <constraint firstAttribute="bottom" secondItem="MVd-Bf-FVw" secondAttribute="bottom" id="Sol-wT-sGI"/>
+                <constraint firstAttribute="trailing" secondItem="MVd-Bf-FVw" secondAttribute="trailing" id="WBC-G2-1e7"/>
+            </constraints>
+            <size key="customSize" width="99" height="51"/>
+            <connections>
+                <outlet property="itemButton" destination="MVd-Bf-FVw" id="Ehu-e2-JAI"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="104.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

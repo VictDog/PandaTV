@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionCycleCell" customModule="XMTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage_refresh_tv" translatesAutoresizingMaskIntoConstraints="NO" id="A4Y-Ku-9mo"/>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-7z-I5g">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-MV-Fej">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="syW-Pz-uxB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="yaN-MV-Fej" firstAttribute="centerY" secondItem="ALa-7z-I5g" secondAttribute="centerY" id="ayI-WL-vAp"/>
+                            <constraint firstAttribute="trailing" secondItem="yaN-MV-Fej" secondAttribute="trailing" constant="10" id="lU5-ef-rwS"/>
+                            <constraint firstItem="yaN-MV-Fej" firstAttribute="leading" secondItem="ALa-7z-I5g" secondAttribute="leading" constant="10" id="nUJ-IB-4gS"/>
+                            <constraint firstAttribute="height" constant="30" id="s8b-be-7DK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="A4Y-Ku-9mo" secondAttribute="bottom" id="J5E-hy-FJD"/>
+                <constraint firstItem="A4Y-Ku-9mo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Kte-t6-IO7"/>
+                <constraint firstItem="A4Y-Ku-9mo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UjO-Of-O6W"/>
+                <constraint firstItem="ALa-7z-I5g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eda-hc-7BE"/>
+                <constraint firstAttribute="trailing" secondItem="ALa-7z-I5g" secondAttribute="trailing" id="fus-pz-gUX"/>
+                <constraint firstAttribute="bottom" secondItem="ALa-7z-I5g" secondAttribute="bottom" id="q23-Bz-6oY"/>
+                <constraint firstAttribute="trailing" secondItem="A4Y-Ku-9mo" secondAttribute="trailing" id="s8j-EU-FU1"/>
+            </constraints>
+            <size key="customSize" width="283" height="122"/>
+            <connections>
+                <outlet property="iconImageView" destination="A4Y-Ku-9mo" id="bXJ-NH-0Es"/>
+                <outlet property="titleLabel" destination="yaN-MV-Fej" id="mSd-dQ-Ztr"/>
+            </connections>
+            <point key="canvasLocation" x="-430" y="-45"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homepage_refresh_tv" width="56" height="60"/>
+    </resources>
+</document>
